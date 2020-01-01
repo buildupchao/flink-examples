@@ -1,0 +1,7 @@
+uid,age,sex,career,city
+##用户id,年龄,性别,职业,城市
+101,28,male,IT,beijing
+102,32,female,lawyer,hebei
+103,18,female,student,tianjing
+104,null,male,teacher,shanghai
+105,26,male,IT,beijing

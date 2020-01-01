@@ -1,0 +1,4 @@
+userId(105)'s age is 26, male.
+userId(101)'s age is 28, male.
+userId(102)'s age is 32, female.
+userId(103)'s age is 18, female.
