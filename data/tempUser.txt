@@ -1,0 +1,5 @@
+101,28,male,IT,beijing
+102,32,female,lawyer,hebei
+103,18,female,student,tianjing
+104,30,male,teacher,shanghai
+105,26,male,IT,beijing
