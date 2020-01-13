@@ -1,4 +1,4 @@
-package com.buildupchao.flinkexamples.batch.api;
+package com.buildupchao.flinkexamples.batch.sql;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -86,3 +86,17 @@ Table Sink将表发送到外部存储系统。
 <br/>
 ![](https://github.com/buildupchao/ImgStore/blob/master/blog/flink/flink-foundation/dynamic-table-and-continuous-query-6.png?raw=true)
 
+## 4.Flink Table API
+
+Table API使用一个Scala和Java的语言集成查询API，是基于Table类。Table类代表了一个流或者批表，并提供方法来使用关系型操作。这些方法返回一个新的Table对象，这个新的Table对象代表着输入的Table应用关系型操作后的结果。
+<br/>
+[代码：批表案例](https://github.com/buildupchao/flink-examples/blob/master/src/main/java/com/buildupchao/flinkexamples/batch/api/BatchTableExample.java)
+<br/>
+[代码：流表案例](https://github.com/buildupchao/flink-examples/blob/master/src/main/java/com/buildupchao/flinkexamples/stream/StreamTableApiAndSqlExample.java)
+<br/>
+
+## 5.Flink SQL
+
+Flink SQL集成是基于Apache Calcite，Apache Calcite实现了标准的SQL。
+<br/>
+[代码：订单案例]()
