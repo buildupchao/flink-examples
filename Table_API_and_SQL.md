@@ -66,3 +66,21 @@ SQL和Relational algebra并没有考虑到流数据。因此，在关系代数�
 <br/>
 ![](https://github.com/buildupchao/ImgStore/blob/master/blog/flink/flink-foundation/dynamic-table-and-continuous-query-4.png?raw=true)
 <br/>
+
+### 2.5表转换到流
+
+流查询的结果表将被动态更新，即，随着新纪录到达查询的输入流，它也发生变化。因此，将这样的动态查询转换成的DataStream需要对表的更新进行编码。
+<br/>
+将表转换为数据流有两种方式：
+<br/>
+- Append-only Mode：只有在动态Table仅通过INSERT更新修改时才能使用此模式，即它仅附加，并且以前发出的结果永远不会更新。如果更新或删除操作使用追加模式会失败报错。
+- Retract Mode：始终可以使用此模式。返回值是boolean类型。它用true或false来标记数据的插入或撤回，返回true代表数据插入，false代表数据的撤回。
+
+![](https://github.com/buildupchao/ImgStore/blob/master/blog/flink/flink-foundation/dynamic-table-and-continuous-query-5.png?raw=true)
+
+## 3.Flink SQL Connector
+
+Flink的表API和SQL程序可以连接到其他外部系统来读写批处理表和流表。Table source提供对存储在外部系统（如数据库、键值存储、消息队列或文件系统）中的数据的访问。Table Sink将表发送到外部存储系统。
+<br/>
+![](https://github.com/buildupchao/ImgStore/blob/master/blog/flink/flink-foundation/dynamic-table-and-continuous-query-6.png?raw=true)
+
