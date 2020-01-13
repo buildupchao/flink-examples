@@ -63,4 +63,6 @@ SQL和Relational algebra并没有考虑到流数据。因此，在关系代数�
 <br/>
 ![](https://github.com/buildupchao/ImgStore/blob/master/blog/flink/flink-foundation/dynamic-table-and-continuous-query-3.png?raw=true)
 <br/>
+<br/>
 ![](https://github.com/buildupchao/ImgStore/blob/master/blog/flink/flink-foundation/dynamic-table-and-continuous-query-4.png?raw=true)
+<br/>
