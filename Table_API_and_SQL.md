@@ -80,7 +80,9 @@ SQL和Relational algebra并没有考虑到流数据。因此，在关系代数�
 
 ## 3.Flink SQL Connector
 
-Flink的表API和SQL程序可以连接到其他外部系统来读写批处理表和流表。Table source提供对存储在外部系统（如数据库、键值存储、消息队列或文件系统）中的数据的访问。Table Sink将表发送到外部存储系统。
+Flink的表API和SQL程序可以连接到其他外部系统来读写批处理表和流表。<br/>
+Table source提供对存储在外部系统（如数据库、键值存储、消息队列或文件系统）中的数据的访问。<br/>
+Table Sink将表发送到外部存储系统。
 <br/>
 ![](https://github.com/buildupchao/ImgStore/blob/master/blog/flink/flink-foundation/dynamic-table-and-continuous-query-6.png?raw=true)
 
