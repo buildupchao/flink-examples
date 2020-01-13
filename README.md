@@ -8,3 +8,5 @@ flink learning examples.
 - [代码：connector](https://github.com/buildupchao/flink-examples/tree/master/src/main/java/com/buildupchao/flinkexamples/batch/connector)
 
 - [文档：Table API & SQL](https://github.com/buildupchao/flink-examples/blob/master/documents/Table_API_and_SQL.md)
+
+- [文档：实时数仓](https://github.com/buildupchao/flink-examples/blob/master/documents/realtime-data-warehouse-based-on-flink.md)
