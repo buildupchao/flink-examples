@@ -99,4 +99,4 @@ Table API使用一个Scala和Java的语言集成查询API，是基于Table类。
 
 Flink SQL集成是基于Apache Calcite，Apache Calcite实现了标准的SQL。
 <br/>
-[代码：订单案例]()
+[代码：订单案例](https://github.com/buildupchao/flink-examples/blob/master/src/main/java/com/buildupchao/flinkexamples/batch/sql/BatchOrderCaseSQLExample.java)
