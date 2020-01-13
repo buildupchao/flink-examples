@@ -7,4 +7,4 @@ flink learning examples.
 
 - [connector](https://github.com/buildupchao/flink-examples/tree/master/src/main/java/com/buildupchao/flinkexamples/batch/connector)
 
-- [Table API & SQL]()
+- [Table API & SQL](https://github.com/buildupchao/flink-examples/blob/master/Table_API_and_SQL.md)
