@@ -67,5 +67,26 @@ test13,1579174591000
 此时没有再触发window。
 
 <strong style="color:red;">原因是什么？</strong>
+- 对于此窗口而言，允许两秒的迟到数据，即第一次触发是在 watermark >= window_end_time时
+- 第二次（或多次）触发的条件是 watermark < window_end_time + allowedLateness 时间内，这个窗口有 late 数据到达时
 
-## 3.
+## 3.sideOutputLateData 收集迟到的数据
+
+通过`sideOutputLateData`可以把迟到的数据统一收集，统一存储，方便后期排查问题。
+
+测试如下：
+```
+nc -lk 9999
+```
+输入数据：
+```
+test1,1579174589000
+test2,1579174590000
+```
+观察控制台打印信息，再输入数据：
+```
+test3,1579174590000
+test4,1579174591000
+test5,1579174592000
+```
+此时，针对这几条迟到的数据，都通过`sideOutputLateData`保存到了`outputTag`中。
